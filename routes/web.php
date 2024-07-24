@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('/train_list', function () {
     return view('component.trainList');
 })->name('trainList');
+
+Route::get('/trains', [TrainController::class, 'index'])->name('trains.index');
