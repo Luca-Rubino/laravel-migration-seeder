@@ -1,0 +1,29 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+article {
+    width: min-content;
+    border: 2px solid black;
+    border-radius: 25px;
+    ul:first-child {
+        li {
+            padding: .5rem;
+            text-align: center;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            font-size: 3rem;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    display: flex;
+
+    li {
+        padding: 1rem;
+        margin-right: .5rem;
+    }
+}

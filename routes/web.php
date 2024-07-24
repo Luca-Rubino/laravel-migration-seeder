@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/train_list', function () {
+    return view('component.trainList');
+})->name('trainList');
